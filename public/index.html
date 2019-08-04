@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Database</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./movie_logo.ico">
+</head>
+<body>
+    <div class="search">
+        <button onclick="getResults(query.value, 1, filter.value)">Search</button>
+        <button onclick="getResults()">My Movie Library</button>
+        <select id="filter">    
+            <option value="movie">Movie</option>
+            <option value="tv">Television</option>
+        </select>
+    </div>
+    <input type="text" id="query" placeholder="Enter a movie name" id="query"/>
+    <div id="pages"></div>
+    <div id="app"></div>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
